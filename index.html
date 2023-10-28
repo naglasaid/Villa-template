@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Villa</title>
+<title>Villa Project</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">  <!-- bootstarp stylesheet -->
 <link rel="stylesheet" href="css/all.css">     <!-- for using google icons -->
 <link rel="stylesheet" href="css/NewStyle.css">  <!-- My own Style -->
@@ -20,12 +20,13 @@
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><i class="fas fa-warehouse"></i></a>
-      <a class="navbar-brand text m-3" href="#" style=" border-right:2px solid #f35525; padding-right: 10px; font-weight: bold; color: black;text-transform:uppercase;letter-spacing: 2px;"><span style="color:#f35525">V</span>illa</a>
+      <a class="navbar-brand text m-2" href="#" style="border-right:2px solid #f35525; padding-right: 10px; font-weight: bold; color: black;text-transform:uppercase;letter-spacing: 2px;
+      font-size:35px !important;"><span style="color:#f35525">v</span>illa</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="main">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
           </li>
@@ -34,34 +35,39 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link p-2 p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Trips
+              Properties
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
+              
             </ul>
             <!-- <div class="search ps-3 pe-3">
               <i class="fas fa-search"></i>
             </div> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="#">Contact us</a>
+            <a class="nav-link p-2 p-lg-3 " href="#">Offers</a>
           </li>
+       
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline rounded-pill mainbtn  me-2 pt-2 pb-2 ps-4 pe-4" type="submit">Search</button>
-          <button class="btn btn-outline rounded-pill mainbtn  pt-2 pb-2 ps-4 pe-4" type="submit">Login</button>
+          <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline rounded-pill mainbtn  me-2 pt-2 pb-2 ps-4 pe-4 d-block" type="submit">Search</button> 
+         <button class="btn btn-outline rounded-pill mainbtn me-2 pt-2 pb-2 ps-4 pe-4 d-block" type="submit">Login</button> 
+          <!-- <a class=" nav-link p-2  rounded-pill  d-block f6-5" href="#"><i class="fas fa-search text-center"></i></a>
+          <a class=" nav-link rounded-pill  pe-5 ps-2 ms-1 sign-in-link d-block"  href="#"><i class="fas fa-user text-center me-1"></i></a> -->
         </form>
       </div>
     </div>
   </nav>
-
-<div class="container-fluid mt-2  mb-3">
+<!-------------------------------------------------------------- Landing Carousel start------------------------------------------------------------ -->
+<div class="landing">
+<div class="container-fluid mb-3">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+    <div class="carousel-indicators mb-4">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -69,26 +75,28 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images/villa/banner-01.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption  d-md-block">
+       
+        <div class="carousel-caption d-md-block">
           <h2>Get the Best<br> Villa for <span style="color:#f35525">you</span></h2>
-          <p>Some representative placeholder content for the first slide.</p>
-          <button class="btn btn-outline rounded-pill   pt-2 pb-2 ps-4 pe-4" type="submit">HURRY!</button>
+          <p class="fs-5 text-white-50 mb-5">Some representative placeholder content for the first slide.</p>
+          <button class="btn btn-outline rounded-pill mb-4  " type="submit">HURRY!</button>
         </div>
+      
       </div>
       <div class="carousel-item">
         <img src="images/villa/banner-02.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption  d-md-block">
           <h2>Get the Best<br> Villa for <span style="color:#f35525">you</span></h2>
-          <p>Some representative placeholder content for the second slide.</p>
-          <button class="btn btn-outline rounded-pill   pt-2 pb-2 ps-4 pe-4" type="submit">HURRY!</button>
+          <p class="fs-5 text-white-50 mb-5">Some representative placeholder content for the first slide.</p>
+          <button class="btn btn-outline rounded-pill mb-4  " type="submit">HURRY!</button>
         </div>
       </div>
       <div class="carousel-item">
         <img src="images/villa/banner-03.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption  d-md-block">
           <h2>Get the Best<br> Villa for <span style="color:#f35525">you</span></h2>
-          <p>Some representative placeholder content for the third slide.</p>
-          <button class="btn btn-outline rounded-pill   pt-2 pb-2 ps-4 pe-4" type="submit">HURRY!</button>
+          <p class="fs-5 text-white-50 mb-5">Some representative placeholder content for the first slide.</p>
+          <button class="btn btn-outline rounded-pill mb-4  " type="submit">HURRY!</button>
         </div>
       </div>
     </div>
@@ -102,22 +110,28 @@
     </button>
   </div>
 </div>
+</div>
 
+ <!-------------------------------------------------------------- Landing Carousel End ----------------------------- -->
 
+ <!------------------------------------------------------------- welcome section start----------------------------- -->
 
+<div class="container-fluid">
 
+<div class="welcome bg-light py-3 px-3">
+          <h2 class="">WELCOME </h2>
+          <p class="fs-5 mb-5 text-start">Are you planning to visit Egypt? We offer the ultimate tour in Egypt, covering Cairo, alex. From a one day trip to a 10 day dream vacation, we will take care of all your needs. book hotels. 24/7 Customer Service. .</p>
+          <!-- <button class="btn btn-outline mb-4 fs-5 " type="submit"><i class="fas fa-user text-center me-1"></i></button> -->
+          <a class="btn rounded-pill btn-outline fs-5  text-center text-light " href="#"><i class="fas fa-user text-center me-1"></i>Schedule a visit</a> 
+        </div>
+</div>
 
+ <!------------------------------------------------------------- welcome section End----------------------------- -->
+ 
 
-
-
-
-  
-
-
-
-
-  <!--  -->
-    <!-- Bootstarp  -->
+    
+ 
+ <!-- Bootstarp  -->
     <!-- Latest compiled JavaScript -->
 <script src="js/bootstrap.bundle.min.js"></script>     <!-- include popper.min.js  -->
 <!-- <script src="js/bootstrap.min.js"></script> -->
