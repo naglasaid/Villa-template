@@ -5,8 +5,9 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 :root{
-    /* --blue-color:#2cbbc3; */
+    --blue-color:#2cbbc3;
     --orange-color:#f35525;
+    /* --orange-color:#c19d5f; */
     --silver-color:#a7b2b9;
     --black-color: rgba(0, 0, 0, 0.87);
     --light-color:#ffeee9;
@@ -24,11 +25,12 @@ html,body{
 
 
 
+
 /*/////////////////////////////////////////////// navbar /////////////////////*/
  .navbar-brand i{
     color:white;font-size: 30px; background-color: rgba(0, 0, 0, 0.87); height: 50px; width: 50px;
     line-height: 50px;border-radius: 50%;text-align: center;
-    box-shadow: 1px 1px 10px 2px var(--orange-color);
+    /* box-shadow: 1px 1px 10px 2px var(--blue-color); */
 }
 
 
@@ -64,15 +66,18 @@ border-color: black;
 
 .mainbtn{
     background-color:var(--black-color);
-    color:white;
-    box-shadow: 1px 1px 10px 1px var(--orange-color) inset;
-    padding: .5rem 1rem;
+    background-color: var(--blue-color);
+    /* color:var(--orange-color); */
+    color: #fff !important;
+    /* box-shadow: 1px 1px 10px 1px var(--orange-color); */
+    padding: .5rem 1rem;  font-weight: bold;
 }
 
 .mainbtn:hover{
-    color:var(--orange-color);
-    box-shadow: 1px 1px 10px 1px var(--light-color) inset;
-   
+    
+    box-shadow: 1px 1px 10px 1px var(--light-color) inset ;
+  
+
    
 }
 input[type=search]{
@@ -104,24 +109,15 @@ input[type=search]:focus{
 /*//////////////////////////////// Landing carousel ///////////////////////////////////////////////////////////////////*/
 
 
-.landing{
-    /* min-height: calc(100vh-72px); */
-}
 
-.carousel-caption{
-    /* bottom: 6.25rem !important; */
-}
 
-.text-center{
-/* position: absolute; */
-background-color: #f35525;
-top:100px;
-}
+
+
 
 
 .carousel-item img{
 height: 750px;
-    
+border-radius: 5px; 
    
 }
 
@@ -133,6 +129,7 @@ background-color: var(--orange-color);
 
 .carousel-indicators button[type=button]:hover,.carousel-indicators button[type=button].active{
     background-color: white;
+    
 }
 
 .carousel-control-prev-icon,.carousel-control-next-icon{
@@ -159,36 +156,50 @@ background-color: var(--orange-color);
     font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  /* color: #fff; */
+  
   
  
 
 }
 
 .carousel-item button{
-   box-shadow: none;
-    background-color: white;
-    color: var(--orange-color);
+    box-shadow: 0 0px 5px 1px white;
+    background-color: transparent;
+    color: white;
     width: 140px;
     font-weight: bold;
     padding: .5rem 1rem;
     letter-spacing: 1px;
+    border: 0;
 }
 .carousel-item button:hover{
-    box-shadow: 0 0px 5px 1px white;
-    background-color: transparent ;
-    color: white;
-
+    /* box-shadow: 0 0px 5px 1px var(--orange-color) inset; */
+    background-color: white ;
+    color: var(--orange-color);
+    border: 0;
+    
 }
 /*//////////////////////////////// Landing carousel ///////////////////////////////////////////////////////////////////*/
 
 .welcome{
     box-shadow: 0px 1px 10px 5px silver;
+    border-radius: 5px;
 }
 .welcome h2{
-    color: var(--orange-color);
+    color: var(--blue-color);
     letter-spacing: 1px;
+   
+position: relative;
 }
+/* .welcome h2::before{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: var(--black-color);
+} */
 .welcome button{
     background-color: var(--black-color);
     color: white;
@@ -203,23 +214,15 @@ background-color: var(--orange-color);
 
 .welcome a{
     background-color:var(--black-color);
-    
     height: 50px;
-    
     padding: .25rem 1rem 1rem .25rem;
     letter-spacing: 1px;
-   
 }
 
-
-/* .welcome button::after{
-    position: absolute;
-    content:"Schedule a visit ";
-    color: white;
-    top: 25%;
-    letter-spacing: 1px;
-   
-} */
+.welcome a:hover{
+    color: var(--orange-color)!important;
+    /* background-color:#c19d5f ; */
+}
 
 .welcome a i {
     background-color:var(--orange-color);
@@ -227,5 +230,120 @@ background-color: var(--orange-color);
     width: 40px;
     border-radius: 50%;
     line-height: 40px;
-   
+   color: white!important;
 } 
+
+
+
+    /* background-color: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%); */
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////// activity start///////////////////////////////////////// */
+
+.activity{
+    /* box-shadow: 0px 1px 10px 5px silver; */
+    /* border: 1px solid red; */
+    height: 500px;
+    /* overflow:hidden; */
+}
+
+.activity-header h6{
+color: var(--orange-color);
+}
+
+.accordion-button{
+    color:var(--blue-color)
+}
+
+.accordion-button:active,.accordion-button:hover,.accordion-button:focus{
+    background-color: var(--light-gray);
+    color: var(--black-color);
+    box-shadow: none;
+}
+
+
+
+
+.activity-img{
+  height: 500px;
+    /* width: 700px; */
+    background: url(../images/villa/video-frame.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+/*/////////////////////////////////////////////////////////////////////////////// activity end///////////////////////////////////////// */
+
+/*////////////////////////////////////////////////////////////////////////////////// wide-img1 start//////////////////////////////////// */
+.wide-img1{
+    width: 100%;
+    height: 350px;
+    background: url(../images/villa/Living2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0px 1px 10px 5px silver;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////// wide-img1 end//////////////////////////////////// */
+
+
+/*////////////////////////////////////////////////////////////////////////////////// wide-img2 start//////////////////////////////////// */
+
+.wide-img2{
+    width: 100%;
+    height: 350px;
+    background: url(../images/villa/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0px 1px 10px 5px silver;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////// wide-img2 end//////////////////////////////////// */
+
+/*////////////////////////////////////////////////////////////////////////// sticky-vertical-divStrat////////////////////////////////// */
+
+
+.sticky-vertical{
+    width:100px;
+    height: 300px;
+    position: fixed;
+    z-index: 120;
+   right:20px;
+   top: 200px;
+    
+    
+    
+}
+
+
+ .list-unstyled li i {
+   
+    height: 50px;
+    width: 50px;
+     border-radius: 50%;
+     background-color:var(--orange-color) ;
+    font-size: 30px;
+    color: var(--light-color);
+    line-height: 50px;
+    box-shadow: 0px 2px 5px 2px silver ;
+    cursor: pointer;
+    text-align: center;
+    
+    /* padding: 6px 10px !important; */
+
+}
+
+.list-unstyled li i:hover{
+    color: white;
+    box-shadow: 0px -2px 5px 2px silver ;
+    transition: .5s;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////// sticky-vertical-divEnd////////////////////////////////// */
