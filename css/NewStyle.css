@@ -182,12 +182,20 @@ background-color: var(--orange-color);
 /*//////////////////////////////// Landing carousel ///////////////////////////////////////////////////////////////////*/
 
 .welcome{
-    box-shadow: 0px 1px 10px 5px silver;
-    border-radius: 5px;
+    /* box-shadow: 0px 1px 10px 5px silver; */
+    border-radius: 50px 50px 5px 5px !important;
+   
+  
+   
 }
 .welcome h2{
-    color: var(--blue-color);
-    letter-spacing: 1px;
+    color: var(--orange-color);
+    /* letter-spacing: 1px; */
+    font-size: 2rem;
+    /* writing-mode: vertical-lr;
+    text-orientation: upright; */
+    
+    
    
 position: relative;
 }
@@ -232,9 +240,24 @@ position: relative;
     line-height: 40px;
    color: white!important;
 } 
+.welcome-img img{
+   
+ /* transform: skewX(10deg); */
+ box-shadow:  -12px 0 2px 5px #45949F;
+ transition: .5s;
+ 
+}
+.welcome-img img:hover{
+    transform: translateX(10px);
+    transition: .5s;
+}
+.welcome-title{
+    box-shadow:  12px 6px 2px 5px #45949F;
+}
 
-
-
+.nn{
+    /* border: 1px solid red; */
+}
     /* background-color: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%); */
 
 
@@ -242,27 +265,100 @@ position: relative;
 /*/////////////////////////////////////////////////////////////////////////////// activity start///////////////////////////////////////// */
 
 .activity{
-    /* box-shadow: 0px 1px 10px 5px silver; */
+    box-shadow: 0px 1px 10px 5px silver;
     /* border: 1px solid red; */
     height: 500px;
     /* overflow:hidden; */
+    border-top-right-radius: 50px !important;
+    border-top-left-radius: 50px !important;
+    /* background-color: #fff; */
 }
 
 .activity-header h6{
 color: var(--orange-color);
 }
+/*/////////////////////////////////////////////////////////////////////////////// accordion ///////////////////////////////////////////////////////////*/
 
-.accordion-button{
-    color:var(--blue-color)
+.card,.card-header{
+    background-color: #fff;
 }
 
-.accordion-button:active,.accordion-button:hover,.accordion-button:focus{
+.accordion-header button{
+    color: var(--orange-color) !important;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    
+}
+
+.accordion-header button:active,.accordion-header button:hover,.accordion-header button:focus{
     background-color: var(--light-gray);
-    color: var(--black-color);
+    color:var(--orange-color);
     box-shadow: none;
 }
 
 
+.accordion-header button[aria-expanded=false]::after{
+    content: '\002B' !important;
+    width: 35px;
+    height:35px;
+    line-height: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    right: 3px;
+    top:7px;
+    position: absolute;
+    background-color: var(--light-color);
+    color: var(--blue-color);
+transition: .5s;
+background: none!important;
+background-color: var(--light-color)!important;
+}
+
+.accordion-header button[aria-expanded=true]::after{
+    content: '\2212'!important;
+    width: 35px;
+    height:35px;
+    line-height: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    right: 3px;
+    top:7px;
+    position: absolute;
+    background-color: var(--light-color);
+    color: var(--blue-color);
+    transition: .5s;
+    background: none!important;
+    background-color: var(--light-color)!important;
+}
+
+.accordion-header button[aria-expanded=false]::before{
+content:'' ;
+width: 15px;
+height: 15px;
+position: absolute;
+background-color: white;
+
+z-index: 1;
+transform: rotate(45deg);
+left:30px;
+top: 40px;
+
+}
+
+
+.accordion-header button:active,.accordion-header button:hover,.accordion-header button btn:focus{
+    background-color: var(--light-gray);
+    color:var(--orange-color);
+    box-shadow: none;
+}
+
+.card-header .collapsed btn[aria-expanded=true]{
+    /* color:var(--silver-color); */
+    background-color: var(--light-color);
+}
 
 
 .activity-img{
@@ -271,7 +367,10 @@ color: var(--orange-color);
     background: url(../images/villa/video-frame.jpg);
     background-size: cover;
     background-position: center;
-   
+    /* box-shadow: 0px 1px 10px 5px silver; */
+    border-top-right-radius: 50px !important;
+    border-top-left-radius: 50px !important;
+  
     
 }
 /*/////////////////////////////////////////////////////////////////////////////// activity end///////////////////////////////////////// */
@@ -314,7 +413,7 @@ color: var(--orange-color);
     height: 300px;
     position: fixed;
     z-index: 120;
-   right:20px;
+   right:5px;
    top: 200px;
     
     
