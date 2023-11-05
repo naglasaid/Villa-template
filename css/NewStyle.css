@@ -23,6 +23,27 @@ html,body{
     
 }
 
+/*///////////////////////////////////////////////// preloader////////////////////////////////////////////////// */
+
+
+
+
+
+
+/*///////////////////////////////////////////// preloader///////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,7 +51,7 @@ html,body{
  .navbar-brand i{
     color:white;font-size: 30px; background-color: rgba(0, 0, 0, 0.87); height: 50px; width: 50px;
     line-height: 50px;border-radius: 50%;text-align: center;
-    /* box-shadow: 1px 1px 10px 2px var(--blue-color); */
+    box-shadow: 1px 1px 10px 2px var(--orange-color);
 }
 
 
@@ -65,8 +86,8 @@ border-color: black;
 
 
 .mainbtn{
-    background-color:var(--black-color);
-    background-color: var(--blue-color);
+    background-color:var(--black-color)!important;
+    /* background-color: var(--blue-color); */
     /* color:var(--orange-color); */
     color: #fff !important;
     /* box-shadow: 1px 1px 10px 1px var(--orange-color); */
@@ -76,7 +97,7 @@ border-color: black;
 .mainbtn:hover{
     
     box-shadow: 1px 1px 10px 1px var(--light-color) inset ;
-  
+   color:var(--orange-color);
 
    
 }
@@ -391,8 +412,8 @@ top: 40px;
 /*////////////////////////////////////////////////////////////////////////////////// wide-img1 start//////////////////////////////////// */
 .wide-img1{
    
-    height: 500px;
-    background: url(../images/villa/Living2.jpg);
+    height: 450px;
+    background: url(../images/villa/Living22.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -404,7 +425,7 @@ top: 40px;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.5);
    
     top: 0;
     left:0;
@@ -417,11 +438,13 @@ top: 40px;
 
 .wide-img1 .overlay .row .card .ss{
 backdrop-filter: blur(5px) saturate(180%)!important;
-    -webkit-backdrop-filter: blur(5px) saturate(180%)!important; */
-    background-color: var(--light-color)!important;
-     border-radius: var(--border-radius-medium)!important;
-    border: 1px solid rgba(209, 213, 219, 0.3)!important;
-    border-radius: var(--border-radius-medium)!important;
+    -webkit-backdrop-filter: blur(5px) saturate(180%)!important; 
+    border-radius: 50px !important;
+    box-shadow: 0px 1px 10px 5px silver!important;
+     
+    
+    /* border: .5px solid #525151!important; */
+    
 }
 form button{
     background-color: #2cbbc3 !important;
@@ -433,12 +456,12 @@ form button{
 
 
 .popup-img button{
-    background-color: var(--blue-color);
-    /* color:#fff; */
+    background-color: var(--black-color);
+    color:#fff;
 }
 .popup-img button:hover{
    
-    color: #fff !important;
+    color: var(--orange-color) !important;
     transition: .5s!important;
     
 }
@@ -462,7 +485,7 @@ background: url(../images/villa/2.jpg);
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.7);
    
     top: 0;
     left:0;
@@ -478,6 +501,221 @@ transition: .5s;
 
 /*////////////////////////////////////////////////////////////////////////////////// wide-img2 end//////////////////////////////////// */
 
+/* picture filter start  */
+/* 
+---------------------------------------------
+Properties Style
+--------------------------------------------- 
+*/
+
+.pictures .item{
+  margin-bottom: 15px;
+  
+}
+
+.pictures .effect{
+  position: relative;
+  /* box-shadow:0 0 0 5px #0009, 0 10px 65px var(--orange-color); */
+  transition: 0.25s  ;
+  /* border:  1px solid red; */
+}
+.pictures .effect:hover{
+  /* background-color: #a7b2b9; */
+/* box-shadow:0 0 0 5px #0009, 0 10px 45px blue; */
+}
+
+.pictures .effect .clip{
+  position: absolute;
+  inset: 5px;
+  /* box-shadow: 0 0 0 2px #1e1e1e; */
+}
+
+.pictures .effect .clip span{
+  position: absolute;
+  inset:5px ;
+  background-color: rgba(167, 178, 185,.2);
+  transition: .25s;
+  z-index: 20;
+}
+
+.pictures .effect .clip span:nth-child(1){
+  clip-path: polygon(0 5%, 0 95%, 50% 50%);
+}
+
+.pictures .effect .clip span:nth-child(2){
+  clip-path: polygon(95% 0, 5% 0, 50% 50%);
+}
+
+
+.pictures .effect .clip span:nth-child(3){
+  clip-path: polygon(100% 95%, 100% 5%, 50% 50%);
+}
+
+.pictures .effect .clip span:nth-child(4){
+  clip-path: polygon(5% 100%, 95% 100%, 50% 50%);
+}
+ 
+.pictures .effect:hover .clip span:nth-child(1){
+  clip-path: polygon(0 0, 0 100%, 10% 50%);
+}
+
+.pictures .effect:hover .clip span:nth-child(2){
+  clip-path: polygon(100% 0, 0% 0, 50% 10%);
+}
+
+.pictures .effect:hover .clip span:nth-child(3){
+  clip-path: polygon(100% 100%, 100% 0%, 90% 50%);
+}
+
+.pictures .effect:hover .clip span:nth-child(4){
+  clip-path: polygon(0 100%, 100% 100%, 50% 90%);
+}
+
+
+
+
+
+
+
+
+.pictures.effect:hover .pictures.effect.item img {
+  scale:1;
+}
+
+
+  .pictures .item img {
+    border-radius: 20px;
+    /* scale:0; */
+  }
+  
+  .pictures .item span.category {
+    background-color: #fbd9cf;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1e1e1e;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  
+  
+  
+  
+  .pictures .item .btn {
+    
+    background-color: #1e1e1e!important;
+    color: #fff !important;
+  }
+
+  .pictures .item .btn:hover {
+    
+    background-color: var(--orange-color)!important;
+    color: #fff !important;
+    transition: .5s;
+  }
+  
+  ---------------------------------------------
+Properties Style
+--------------------------------------------- 
+*/
+
+.properties ul.properties-filter {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.properties ul.properties-filter li {
+  display: inline-block;
+  margin: 5px 8px;
+}
+
+.properties ul.properties-filter li a {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.properties ul.properties-filter li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+  font-weight: 700
+}
+
+.properties ul.properties-filter li a.is_active:hover {
+  color: #fff;
+}
+
+.properties ul.properties-filter li a:hover {
+  color: #f35525;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .header-area .main-nav .logo h1 {
+      line-height: 80px !important;
+    }
+    .best-deal .tabs-content .nav-link {
+      font-size: 14px;
+      padding: 0px 15px;
+      height: 44px;
+      line-height: 44px;
+    }
+    .best-deal .tabs-content ul.nav-tabs li {
+      margin: 0px 5px;
+    }
+    .properties ul.properties-filter li a {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+    .properties ul.properties-filter li {
+      margin: 5px;
+    }
+    .header-area .main-nav .nav li:last-child {
+      display: none;
+    }
+  }
+/* 
+  
+  /* 
+/* pictures filte end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*////////////////////////////////////////////////////////////////////////// sticky-vertical-divStrat////////////////////////////////// */
 
 
@@ -487,7 +725,7 @@ transition: .5s;
     position: fixed;
     z-index: 120;
    right:5px;
-   top: 200px;
+   top: 120px;
     
     
     
