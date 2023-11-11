@@ -7,6 +7,7 @@
 :root{
     --blue-color:#2cbbc3;
     --orange-color:#f35525;
+    /* blue-color: #50b2c0 */
     /* --orange-color:#c19d5f; */
     --silver-color:#a7b2b9;
     --black-color: rgba(0, 0, 0, 0.87);
@@ -19,7 +20,7 @@ html,body{
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Roboto', sans-serif; */
     /* color:red; */
-    height: 10000px;
+    /* height: 10000px; */
     
 }
 
@@ -193,7 +194,7 @@ background-color: var(--orange-color);
     letter-spacing: 1px;
     border: 0;
 }
-.carousel-item button:hover{
+.carousel-item button:hover,.carousel-item button:focus,.carousel-item button:active{
     /* box-shadow: 0 0px 5px 1px var(--orange-color) inset; */
     background-color: white ;
     color: var(--orange-color);
@@ -301,11 +302,12 @@ position: relative;
 .activity{
     box-shadow: 0px 1px 10px 5px silver;
     /* border: 1px solid red; */
-    height: 500px;
+    height: 700px;
     /* overflow:hidden; */
+    border-radius: 10px;
     border-top-right-radius: 50px !important;
-    /* border-top-left-radius: 50px !important; */
-    /* background-color: #fff; */
+    border-bottom-right-radius: 50px !important;
+    background-color: #fff !important;
 }
 
 .activity-header h6{
@@ -344,7 +346,7 @@ color: var(--orange-color);
     top:7px;
     position: absolute;
     background-color: var(--light-color);
-    color: var(--blue-color);
+    color: var(--black-color);
 transition: .5s;
 background: none!important;
 background-color: var(--light-color)!important;
@@ -362,13 +364,13 @@ background-color: var(--light-color)!important;
     top:7px;
     position: absolute;
     background-color: var(--light-color);
-    color: var(--blue-color);
+    color: var(--black-color);
     transition: .5s;
     background: none!important;
     background-color: var(--light-color)!important;
 }
 
-.accordion-header button[aria-expanded=false]::before{
+/* .accordion-header button[aria-expanded=false]::before{
 content:'' ;
 width: 15px;
 height: 15px;
@@ -380,7 +382,7 @@ transform: rotate(45deg);
 left:30px;
 top: 40px;
 
-}
+} */
 
 
 .accordion-header button:active,.accordion-header button:hover,.accordion-header button btn:focus{
@@ -396,15 +398,16 @@ top: 40px;
 
 
 .activity-img{
-  height: 500px;
+  height: 700px;
     /* width: 700px; */
-    background: url(../images/villa/video-frame.jpg);
+    background: url(../images/villa/Living18.jpg);
     background-size: cover;
     background-position: center;
-    /* box-shadow: 0px 1px 10px 5px silver; */
-    /* border-top-right-radius: 50px !important; */
+    box-shadow: 0px 1px 10px 5px silver;
+    border-radius: 10px;
+    border-bottom-left-radius: 50px !important;
     border-top-left-radius: 50px !important;
-  
+    
     
 }
 /*/////////////////////////////////////////////////////////////////////////////// activity end///////////////////////////////////////// */
@@ -441,11 +444,12 @@ backdrop-filter: blur(5px) saturate(180%)!important;
     -webkit-backdrop-filter: blur(5px) saturate(180%)!important; 
     border-radius: 50px !important;
     box-shadow: 0px 1px 10px 5px silver inset!important;
-    transition: 3s;
+    transition: .2s;
 }
 .wide-img1 .overlay .row .card .ss:hover{
-  box-shadow: 0px 1px 10px 5px var(--light-color) !important;
-  transition: 3s;
+  /* box-shadow: 0px 1px 10px 5px var(--light-color) !important; */
+  border-bottom:3px solid var(--orange-color)!important;
+  transition: .2s;
 }
 
 
@@ -556,7 +560,7 @@ background: url(../images/villa/2.jpg);
     top: 0;
     left:0;
 }
-.wide-img2 .overlay button:hover{
+.wide-img2 .overlay button:hover,.wide-img2 .overlay button:focus,.wide-img2 .overlay button:active{
 background-color: transparent !important;
 
  border-color: #f35525 !important; 
@@ -757,6 +761,18 @@ Properties Style
   transition: 1s;
 }
 
+.card-img-overlay{
+  transition: 1s;
+}
+.our-team .item:hover .card-img-overlay{
+  /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+  /* transform:scale(.92,.92) ; */
+  transition: 1s;
+}
+
+
+
+
 .card-img-overlay img{
   height: 120px; width: 100px; border-radius: 50%;
   box-shadow: 0px 2px 5px 2px silver ;
@@ -771,33 +787,39 @@ Properties Style
 .our-team .btn{
   background-color: var(--orange-color);
   color: var(--orange-color)!important;
+  /* transition: .3s; */
 }
+
+/* .our-team .btn:hover{
+  color: #fff!important;
+  transition: .3s;
+} */
 
 /*///////////////////////////////////////////////////////////////// our-team -end/////////////////////////////////////////////////////////// */
 
 
+/*///////////////////////////////////////////////////////////////// follow-us -start/////////////////////////////////////////////////////////// */
 
-
-.follow-us{
+/* .follow-us{
   position: relative;
   background-image: url(../images/villa/banner-01.jpg);
   background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  height: 150px;
-}
-.follow-us .overlay{
+  height: 400px;
+} */
+/* .video .overlay{
   position: absolute;
   width: 100%;
   height: 100%;
   background-color:rgba(0, 0, 0, 0.6);
   top: 0;
   left:0;
-}
+} */
 
 
 
-.followus-list{
+/* .followus-list{
   list-style-type: none;
   display: inline-flex;
   justify-content:center;
@@ -821,10 +843,54 @@ Properties Style
   color: white;
   box-shadow: 0px -2px 5px 2px silver ;
   transition: .5s; 
+} */
+
+.video {
+  background-image: url(../images/villa/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px 250px 0px;
+  position: relative;
 }
 
+.video-content {
+  margin-top: -240px;
+}
 
+.video .section-heading h2 {
+  color: #fff;
+}
 
+.video-content .video-frame {
+  position: relative;
+  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); */
+  border-radius: 10px;
+}
+
+.video-content .video-frame img {
+  border-radius: 10px;
+  
+}
+
+.video-content .video-frame a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-26px, -26px);
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 52px;
+  color: #ee6c4d;
+  outline: 15px solid rgba(254, 85, 37, 0.5);
+  font-size: 18px;
+}
+
+/*///////////////////////////////////////////////////////////////// follow-us -end/////////////////////////////////////////////////////////// */
 
 
 
@@ -882,3 +948,17 @@ Properties Style
   box-shadow: 0px 2px 5px 2px silver ;
   
 }
+
+
+
+
+
+ /*//////////////////////////////////////////////////////////////////////// footer start///////////////////////////////////////////// */
+ 
+ .fotter-content{
+  background-color: #333533;
+  /* border: 1px solid red; */
+ }
+
+/*//////////////////////////////////////////////////////////////////////// footer end /////////////////////////////////////////////*/
+
