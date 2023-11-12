@@ -786,7 +786,7 @@ Properties Style
 
 .our-team .btn{
   background-color: var(--orange-color);
-  color: var(--orange-color)!important;
+  color: #fff!important;
   /* transition: .3s; */
 }
 
@@ -852,6 +852,7 @@ Properties Style
   background-position: center center;
   padding: 100px 0px 250px 0px;
   position: relative;
+  /* border : 2px solid red; */
 }
 
 .video-content {
@@ -866,6 +867,7 @@ Properties Style
   position: relative;
   /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); */
   border-radius: 10px;
+  /* border : 2px solid green; */
 }
 
 .video-content .video-frame img {
@@ -955,10 +957,108 @@ Properties Style
 
  /*//////////////////////////////////////////////////////////////////////// footer start///////////////////////////////////////////// */
  
- .fotter-content{
-  background-color: #333533;
-  /* border: 1px solid red; */
- }
+.footer{
+  background-color: #24262b;
+  
+padding: 30px 0 10px 0 ;
+/* border:1px solid red */
+}
+
+.fotter-content{
+
+   /* box-shadow: 0px -2px 5px 2px silver ; */
+   /* border:1px solid red  */
+   
+}
+
+ 
+
+.footer-col{
+  /* background-color: #45949F; */
+  padding: 7px 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color:#fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  /* background-color: red; */
+}
+
+.footer-col h4::before{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #f35525;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+ font-size:16px ;
+ color:#bbbbbb;
+ font-weight: 300;
+ display: block;
+transition: all 0.5 ease;
+position: relative;
+background-color: #24262b;
+letter-spacing: .5px;
+}
+
+.footer-col ul li a::before{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom: -5px;
+  background-color: #f35525;
+  height: 2px;
+  box-sizing: border-box;
+  width: 0px;
+  transition: all .5s;
+}
+
+.footer-col ul li a:hover::before{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom: -5px;
+  background-color: #f35525;
+  height: 2px;
+  box-sizing: border-box;
+  width: 75px;
+}
+
+
+.footer-col ul li a:hover{
+ color:#ffffff;
+  /* padding-left:2px; */
+}
+
+.footer-col .social-links a{
+  background-color:#ee6c4d;
+display: inline-block;
+height: 40px;
+width: 40px;
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50px;
+color:#ffffff;
+transition: all 0.5 ease;
+}
+
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
 
 /*//////////////////////////////////////////////////////////////////////// footer end /////////////////////////////////////////////*/
 
