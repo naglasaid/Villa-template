@@ -1275,7 +1275,7 @@ Properties Style
 }
 
 .news-card:hover{
-height:450px
+height:420px
 }
 
 .news-card .imgBX{
@@ -1308,7 +1308,7 @@ height:450px
   position: absolute;
   top:252px;
   width: 100%;
-  height: 35px;
+  height: 50px;
   padding: 0 30px;
   overflow: hidden;
   text-align: center;
