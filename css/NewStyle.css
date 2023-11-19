@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 :root{
     --blue-color:#2cbbc3;
     --orange-color:#f35525;
@@ -17,10 +18,13 @@
     
 }
 
+
 html,body{
     font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    /* font-family: "Baloo 2", cursive; */
     /* font-family: 'Roboto', sans-serif; */
-    /* color:red; */
+    
     /* height: 10000px; */
     
 }
@@ -53,7 +57,7 @@ html,body{
  .navbar-brand img{
     color:white;font-size: 30px; background-color: rgba(0, 0, 0, 0.87); height: 50px; width: 50px;
     line-height: 50px;border-radius: 50%;text-align: center;
-    box-shadow: 1px 1px 10px 2px var(--orange-color);
+    box-shadow: 1px 1px 10px 2px var(--black-color);
 }
 
 
@@ -373,9 +377,9 @@ position: relative;
   letter-spacing: 1px;
 }
 
-.welcome a:hover{
+.welcome a:hover,.welcome a:active,.welcome a:focus{
   color: var(--orange-color)!important;
- 
+ box-shadow: none;
  }
 
 .welcome a i {
@@ -1197,7 +1201,7 @@ Properties Style
     position: fixed;
     z-index: 120;
    left:15px;
-   top: 120px;
+   top: 50px;
     
 }
 
@@ -1207,9 +1211,9 @@ Properties Style
     height: 30px;
     width: 30px;
      /* border-radius: 50%; */
-     background-color:var(--orange-color) ;
+     background-color:var(--black-color);
     font-size: 25px;
-    color: white;
+    color:#f35525;
     line-height: 30px;
     box-shadow: 0px 2px 5px 2px silver ;
     cursor: pointer;
@@ -1225,184 +1229,141 @@ Properties Style
     transition: .5s;
 }
 
-/*////////////////////////////////////////////////////////////////////////// News start////////////////////////////////// */
 
 
-/* .postcard-img::before{
-position: absolute;
-content: '';
-top:0px;
-left:-10px;
-height:120%;
 
-width:60px;
-background-color: #fff;
-border-radius:10px;
-transform: rotate(-9deg);
 
-} */
 
-/* @media screen and (min-width: 769px) {
-  .postcard {
-    /* display: flex;
-    flex-flow: column; */
-  /* }} */
 
-/* .postcard-img img {
-  
-  max-height: 180px;
-    width: 100%;
-  border-radius: 10px;
-  
-} */
 
-.postcard__title a{
-  color: #f35525;
+
+
+
+
+/*------------------------------------------------------------------------------ last section start ------------------------------*/
+.lastsection{
+  min-height: 400px;
+   display: flex;
+  justify-content: center; 
+  align-items:center;
+  /* box-shadow: 1px 1px 10px 2px silver!important; */
+/* background-image:linear-gradient(120deg,black,#ee6c4d,black); */
+/* border-radius: 50px; */
+
+/* background-color: #1e1e1e; */
 }
-.newlist{
-  column-gap: 5px;
+.lastsection .container{
+  display: flex;
+  justify-content: center; 
+  align-items:center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
 }
-.newlist li i{
-width: 30px;
-height: 30px;
-background-color: #1e1e1e;
-font-size: 18px;
-line-height: 30px;
+.news-card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
+  box-shadow: 1px 1px 10px 2px silver!important;
+  /* background-image:linear-gradient(120deg,black,#ee6c4d,black); */
 }
-/* .postcard-img{
-  height: 400px;
-  /* width: 100%; */
-  /* overflow: hidden; */
-  
-/* } */
 
+.news-card:hover{
+height:400px
+}
 
-/* .postcard__bar{
-  background-color: #f35525;
-  width: 50px;
-  height:10px;
-} */
+.news-card .imgBX{
+  position: absolute;
+  top:20px;
+  width: 300px;
+  height: 220px;
+  background-color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
 
-/* .postcard-text-detail{
-overflow: hidden;
-text-overflow: ellipsis;
-text-align: justify;
-/* height: 100%; */
-/* } */
-/* .postcard-tagbox{
-flex-flow: row wrap;
-font-size: 14px;
-margin: 20px 0 0 0;
-padding: 0;
-justify-content: center;
-} */ 
+.news-card:hover .imgBX{
+  top:-100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
 
-/*////////////////////////////////////////////////////////////////////////// News end ////////////////////////////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*////////////////////////////////////////////////////////////////////////// podcast start ////////////////////////////////// */
-/* .podcast{
-display: flex;
-justify-content: center;
-align-items: center;
-} */
-
-.podcast .card img{
-  max-height:180px;
+.news-card .imgBX img{
+  position: absolute;
+  top:0;
+  left:0;
   width: 100%;
-  border-radius: 20px !important;
-  position: relative;
+  height: 100%;
   object-fit: cover;
 }
 
-.podcast .card{
-  height: 600px;
-  margin: 50px;
-  box-shadow: 5px 5px 20px #f79076;
+.news-card .content{
+  position: absolute;
+  top:252px;
+  width: 100%;
+  height: 35px;
+  padding: 0 30px;
   overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.news-card:hover .content{
+  top:130px;
+  height: 250px;
+}
+
+.news-card .content h2{
+  font-size: 1.5em;
+  color: var(--orange-color);
+}
+
+.news-card .content p{
+  color: #333;
+  font-size: 1.05em;
+}
+
+.news-card .content a{
+  position: relative;
+  top:10px;
+  /* display: inline-block; */
+  padding: 12px 25px;
+  background-color:var(--black-color);
+  color: var(--light-color);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid var(--orange-color);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.news-card .content a:hover,.news-card .content a:focus,.news-card .content a:active{
+  color: #333;
+  box-shadow: none;
+  background-color: transparent;
+  border: 2px solid var(--orange-color);
   
 }
 
-.podcast.card:hover{
-  cursor: pointer;
-}
-
-.podcast.card:hover .intro {
-height:100%;
-bottom:240px;
-/* background-color: black; */
-
-}
+/*------------------------------------------------------------------------------- last section end -------------------------------------*/
 
 
 
 
-.intro{
-  /* height: 60px; */
-  width: 500px;
-  padding: 6px;
-  box-sizing: border-box;
-  /* position: absolute; */
-  left: 5px;
-  bottom: 240px;
-  background-color: rgba(27, 27, 27, 0.5);
-  color: white;
-  transition: all 0.5s;
-} 
 
 
-.intro-detail{
-  /* visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s; */
-}
- 
-.podcast .card:hover .intro-detail {
-  /* visibility: visible;
-  opacity: 1; */
-}
 
 
-/*////////////////////////////////////////////////////////////////////////// podcast end ////////////////////////////////// */
+
+
 
 
 
