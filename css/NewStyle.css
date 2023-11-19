@@ -99,24 +99,25 @@ border-color: black;
 
 
 .mainbtn{
-    /* background-color:var(--black-color)!important;
-    color: #fff !important; */
-    background:linear-gradient(150deg,#f35525,#1e1e1e) !important;
-  
-    color: white !important;
+    
+  background-color: #fafafa !important;
+  color: silver!important;
+  border: 2px solid white !important;
     padding: .5rem 1rem;  font-weight: bold;
     box-shadow: 0px 2px 5px 2px silver ;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 .mainbtn:hover,.mainbtn:focus,.btn:active{
     
-    /* box-shadow: 1px 1px 10px 1px var(--light-color) inset ;
+    /* /* box-shadow: 1px 1px 10px 1px var(--light-color) inset ;
    color:var(--orange-color); */
-   /* background: #24262b !important;
-   color: silver!important;
-   box-shadow: 0px 2px 5px 2px #f35525 inset; */
+   /* background: #24262b !important; */
+   
+   /* box-shadow: 0px 2px 5px 2px #f35525;  */
+   color: #f35525 !important;
    opacity: .9;
+   border: 2px solid #f35525 !important;
    
 }
 input[type=search]{
@@ -223,8 +224,8 @@ background-color: var(--orange-color);
 
 .carousel-item button{
     box-shadow: 0 0px 5px 1px white;
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: #ee6c4d;
     width: 140px;
     font-weight: bold;
     padding: .5rem 1rem;
@@ -234,7 +235,7 @@ background-color: var(--orange-color);
 }
 .carousel-item button:hover,.carousel-item button:focus,.carousel-item button:active{
     box-shadow: 0 0px 5px 1px white;
-    background-color: white ;
+    background-color: transparent ;
     color: var(--orange-color);
     border: 0;
     /* box-shadow: none; */
@@ -945,6 +946,7 @@ Properties Style
   list-style: none;
   text-align: center;
   margin-bottom: 70px;
+  
 }
 
 .properties ul.properties-filter li {
@@ -1213,7 +1215,7 @@ Properties Style
      border-radius: 50%;
      background-color:var(--black-color);
     font-size: 25px;
-    color:#f35525;
+    color:var(--light-color);
     line-height: 30px;
     box-shadow: 0px 2px 5px 2px silver ;
     cursor: pointer;
@@ -1224,7 +1226,7 @@ Properties Style
 }
 
 .list-unstyled li i:hover{
-    color: var(--light-color);
+    color: var(--orange-color);
     box-shadow: 0px -2px 5px 2px silver ;
     transition: .5s;
 }
@@ -1258,7 +1260,7 @@ Properties Style
   align-items:center;
   flex-wrap: wrap;
   gap: 100px 50px;
-  padding: 100px 50px;
+  padding: 120px 10px 50px 10px;
 }
 .news-card{
   display: flex;
@@ -1271,7 +1273,7 @@ Properties Style
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
   box-shadow: 1px 1px 10px 2px silver!important;
-  /* background-image:linear-gradient(120deg,black,#ee6c4d,black); */
+  
 }
 
 .news-card:hover{
@@ -1287,12 +1289,14 @@ height:420px
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.5s;
+  
 }
 
 .news-card:hover .imgBX{
   top:-100px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .news-card .imgBX img{
@@ -1302,8 +1306,13 @@ height:420px
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 
+.news-card:hover .content .badge{
+  width: 150px;
+  color: #1e1e1e;
+}
 .news-card .content{
   position: absolute;
   top:252px;
@@ -1316,8 +1325,8 @@ height:420px
 }
 
 .news-card:hover .content{
-  top:130px;
-  height: 270px;
+  top:110px;
+  height: 285px;
 }
 
 .news-card .content h2{
@@ -1340,9 +1349,10 @@ height:420px
   font-weight: 500;
   text-decoration: none;
   border-radius: 8px;
-  border: 2px solid white;
+  border: 2px solid transparent;
   font-weight: bold;
   transition: all 0.5s;
+  
 }
 
 .news-card .content a:hover,.news-card .content a:focus,.news-card .content a:active{
@@ -1352,6 +1362,9 @@ height:420px
   border: 2px solid var(--orange-color);
   
 }
+
+
+
 
 /*------------------------------------------------------------------------------- last section end -------------------------------------*/
 
@@ -1582,7 +1595,8 @@ transition: all 0.5 ease;
 /*//////////////////////////////////////////////////////////////////////// footer end /////////////////////////////////////////////*/
 
 .section-line{
- background: linear-gradient(150deg,#f35525,silver) !important;
+ /* background: linear-gradient(150deg,#f35525,silver) !important; */
+ background-color: #1e1e1e;
   height: 3px;
   width: 330px;
  
