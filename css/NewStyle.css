@@ -29,14 +29,7 @@ html,body{
     
 }
 
-/*///////////////////////////////////////////////// preloader////////////////////////////////////////////////// */
 
-
-
-
-
-
-/*///////////////////////////////////////////// preloader///////////////////////////////////////////////////////////////////////// */
 
 
 
@@ -167,6 +160,43 @@ transition: all .5s;
 
 
 /*/////////////////////////////////////////////// navbar /////////////////////*/
+
+
+/********************************************************* Modal start *****************************************************/
+.modal{
+border-radius: 20px;
+color: #1e1e1e !important;
+}
+.modal-header{
+background-color: var(--orange-color);
+}
+
+.modal-header .btn-close {
+  background-color: #fff !important;
+  border-radius: 50%;
+}
+
+
+
+input[type=email]:focus,input[type=email]:active,input[type=password]:focus,input[type=password]:active {
+  box-shadow: none;
+  border-color: #f35525 !important;
+  color: #f35525 !important;
+}
+.form-label,.form-check-label{
+  color: #f35525 !important;
+}
+.input[type=checkbox]:checked{
+ box-shadow: none !important;
+}
+
+.modal-footer button:hover,.modal-footer button:active,.modal-footer button:focus{
+color: #f35525 !important;
+box-shadow: none !important;
+border-color: transparent !important;
+}
+
+/********************************************************* Modal end *****************************************************/
 
 /*//////////////////////////////// Landing carousel ///////////////////////////////////////////////////////////////////*/
 
@@ -1015,7 +1045,6 @@ Properties Style
 .our-team .card .card-img-overlay{
   background-color:rgba(0, 0, 0, 0.6);
   transition: all 1s;
-
 }
 .our-team .item{
   border-radius: 20px;
@@ -1027,6 +1056,15 @@ Properties Style
 .our-team .item:hover{
   /* transform:scale(.86,.86) ; */
   /* transition: 1s; */
+  
+}
+
+.card-img-top{
+  transition: all 1s;
+  
+}
+.our-team .item:hover .card-img-top{
+  border-radius: 50px;
 }
 
 .card-img-overlay{
@@ -1222,6 +1260,7 @@ Properties Style
     z-index: 120;
    left:15px;
    top: 50px;
+   
     
 }
 
@@ -1231,17 +1270,30 @@ Properties Style
     height: 30px;
     width: 30px;
      border-radius: 50%;
-     background-color:var(--black-color);
+     /* background-color:var(--black-color); */
     font-size: 25px;
     color:var(--light-color);
     line-height: 30px;
     box-shadow: 0px 2px 5px 2px silver ;
     cursor: pointer;
     text-align: center;
-    /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
-    /* padding: 6px 10px !important; */
+    
 
 }
+.list-unstyled li img{
+  height: 30px;
+  width: 30px;
+  background-color:var(--orange-color);
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 2px silver ;
+  transition: all .5s;
+}
+
+.list-unstyled li img:hover{
+  box-shadow: 0px -2px 5px 2px silver ;
+    
+}
+
 
 .list-unstyled li i:hover{
     color: var(--orange-color);
