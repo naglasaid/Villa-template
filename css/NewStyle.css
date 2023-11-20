@@ -91,10 +91,7 @@ border-color: black;
 
 }
 
-.nav-item .dropdown-menu{
-/* background-color: rgba(0, 0, 0, 0.7); */
 
-}
 
 
 
@@ -110,16 +107,14 @@ border-color: black;
 
 .mainbtn:hover,.mainbtn:focus,.btn:active{
     
-    /* /* box-shadow: 1px 1px 10px 1px var(--light-color) inset ;
-   color:var(--orange-color); */
-   /* background: #24262b !important; */
    
-   /* box-shadow: 0px 2px 5px 2px #f35525;  */
    color: #f35525 !important;
    opacity: .9;
    border: 2px solid #f35525 !important;
+   box-shadow: none;
    
 }
+
 input[type=search]{
     border-radius: 50px;
     size: 100px;
@@ -130,7 +125,14 @@ input[type=search]:focus{
     box-shadow: none;
     border: 0.5px solid var(--silver-color);
 }
-
+ .btn-login{
+/* background-color: #f35525!important;
+border: 0;
+box-shadow: 0px 2px 5px 2px silver ;
+padding: .5rem 1rem;  font-weight: bold !important; */
+color: #f35525!important;
+transition: all .5s;
+}
 
 .dropdown-menu .dropdown-item:hover{
     background-color: var(--orange-color);
@@ -236,9 +238,10 @@ background-color: var(--orange-color);
 .carousel-item button:hover,.carousel-item button:focus,.carousel-item button:active{
     box-shadow: 0 0px 5px 1px white;
     background-color: transparent ;
-    color: var(--orange-color);
+    color: white;
     border: 0;
-    /* box-shadow: none; */
+    
+    
 }
 /*//////////////////////////////// Landing carousel ///////////////////////////////////////////////////////////////////*/
 
@@ -477,6 +480,19 @@ color: var(--orange-color);
 .card,.card-header{
     background-color: #fff;
 }
+
+/* .activity::after{
+  content: '';
+  position: absolute;
+  bottom:0;
+  left:0;
+  height: 100px;
+  width: 100%;
+  /* background-color: #f35525; */
+  border: 50px solid transparent;
+  border-bottom-color: #f35525;
+  border-radius: 50px
+} */
 
 .accordion-header button{
     color: var(--orange-color) !important;
@@ -846,7 +862,7 @@ Properties Style
 .pictures .effect:hover  .item .img-thumbnail{
   /* background-color: #a7b2b9; */
 /* box-shadow:0 0 0 5px #0009, 0 10px 45px blue; */
- transform:scaley(1.1) !important;
+ /* transform:scaley(1.1) !important; */
 
 }
 
@@ -919,6 +935,7 @@ Properties Style
     padding: 5px 12px;
     display: inline-block;
     margin-top: 25px;
+    margin-right: auto;
   }
   
   
@@ -997,28 +1014,29 @@ Properties Style
 /*///////////////////////////////////////////////////////////////// our-team -start/////////////////////////////////////////////////////////// */
 .our-team .card .card-img-overlay{
   background-color:rgba(0, 0, 0, 0.6);
- 
+  transition: all 1s;
 
 }
 .our-team .item{
   border-radius: 20px;
   padding: 20px;
-  transition: 1s;
+  transition: all 1s;
   transform:scale(.92,.92) ;
 }
 
 .our-team .item:hover{
-  transform:scale(.86,.86) ;
-  transition: 1s;
+  /* transform:scale(.86,.86) ; */
+  /* transition: 1s; */
 }
 
 .card-img-overlay{
-  transition: 1s;
+  transition: all 1s;
 }
 .our-team .item:hover .card-img-overlay{
-  /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
-  /* transform:scale(.92,.92) ; */
-  transition: 1s;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px 2px silver inset ;
+  /* transform:scale(.86,.86); */
+  
 }
 
 
@@ -1026,13 +1044,13 @@ Properties Style
 
 .card-img-overlay img{
   height: 120px; width: 100px; border-radius: 50%;
-  box-shadow: 0px 2px 5px 2px silver ;
-  transition: 1s;
+  box-shadow: 0px 5px 5px 2px silver ;
+  transition: all 1s;
 }
 
-.our-team .item:hover img{
-  box-shadow: 0px -2px 5px 2px silver ;
-  transition: 1s;
+.our-team .item:hover .card-img-overlay img{
+  box-shadow: 0px -5px 5px 2px silver ;
+  /* transition: 1s; */
 }
 
 .our-team .btn{
@@ -1271,7 +1289,7 @@ Properties Style
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s;
+  transition: all .5s;
   box-shadow: 1px 1px 10px 2px silver!important;
   
 }
@@ -1326,7 +1344,7 @@ height:420px
 
 .news-card:hover .content{
   top:110px;
-  height: 285px;
+  height: 320px;
 }
 
 .news-card .content h2{
@@ -1341,7 +1359,7 @@ height:420px
 
 .news-card .content a{
   position: relative;
-  top:10px;
+  top:5px;
   /* display: inline-block; */
   padding: 12px 25px;
   background-color:var(--black-color);
@@ -1599,7 +1617,6 @@ transition: all 0.5 ease;
  background-color: #1e1e1e;
   height: 3px;
   width: 330px;
- 
   border-radius: 5px;
   border: 0;
   margin: 2px auto;
